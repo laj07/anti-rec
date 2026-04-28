@@ -6,17 +6,24 @@ model:
   alpha: 0.8
 
 data:
-  path: data/ml-25m/ratings.csv
-  titles_path: data/ml-25m/movies.csv
-  min_ratings_per_user: 50
+  path: data/ml-1m/ratings.dat
+  titles_path: data/ml-1m/movies.dat
+  min_ratings_per_user: 20
   val_split: 0.1
-  column_map: {}
-  titles_column_map: {}
-  max_users: 10000
+  sep: "::"
+  column_map:
+    "0": userId
+    "1": movieId
+    "2": rating
+    "3": timestamp
+  titles_column_map:
+    "0": movieId
+    "1": title
+    "2": genres
 
 training:
   epochs: 10
-  batch_size: 2048
+  batch_size: 512
   lr: 0.001
   weight_decay: 1.0e-5
   num_workers: 2
