@@ -1,8 +1,8 @@
 __pycache__/
 *.pyc
 data/
-outputs/*.pt
-outputs/*.pth
-__pycache__/
-*.pyc
 outputs/
+.env
+venv/
+.venv/
+.DS_Store
