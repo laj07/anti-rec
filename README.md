@@ -6,7 +6,7 @@
 
 Train a preference model on user ratings, then **invert it**. A single `alpha` dial controls intensity from normal recommendations (0.0) to maximum surprise (1.0).
 
-## Example Output — User 42
+## Example Output: User 42
 
 **Normal recommendations (alpha=0.0):**
 Happy, Texas (1999)
@@ -48,5 +48,3 @@ python src/main.py --config experiments/movies/config_1m.yaml --mode demo --chec
 Trained on MovieLens 1M — 6040 users, 3706 movies, 1M ratings.
 Best validation loss: **0.0042** after 10 epochs on CPU.
 
-## License
-MIT
