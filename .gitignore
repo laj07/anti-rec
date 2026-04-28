@@ -3,3 +3,6 @@ __pycache__/
 data/
 outputs/*.pt
 outputs/*.pth
+__pycache__/
+*.pyc
+outputs/
